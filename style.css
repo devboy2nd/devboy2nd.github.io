@@ -1,6 +1,6 @@
 .jumbotron {
-  padding: 6rem 1rem;
-  background-color: #e2edff;
+  background-image: url("img/bgn.jpg");
+  background-size: cover;
 }
 
 #projects {
@@ -8,5 +8,5 @@
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
