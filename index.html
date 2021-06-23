@@ -52,7 +52,7 @@
       <h3 class="display-4 text-white"><strong>Devi Erman Efendi</strong></h3>
       <p class="lead text-white">devboy2nd</p>
 
-      <br><br><br>
+      <br>
 
        
        <!-- sosial media-->
@@ -86,45 +86,45 @@
 
 
     <!-- about-->
-
-    <section id="about">
-       <div class="container">
-         <div class="row text-center">
-           <div class="col">
-             <h3>About</h3>
-           </div>
-         </div>
-         <div class="row justify-content-center fs-6">
-           
-           <div class="col-5" class="col-lg-5 col-md-12">
-            <div class="card-body">
-              <div class="h4 mt-0 title">Basic Information</div>
-              <br>
-              <div class="row mt-2">
-                <div class="col-sm-4"><strong>Age:</strong></div>
-                <div class="col-sm-8">18</div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-sm-4"><strong>Email:</strong></div>
-                <div class="col-sm-4">deviermanefendi@gmail.com</div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-sm-4"><strong>Phone:</strong></div>
-                <div class="col-sm-8">+6281268979920</div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-sm-4"><strong>Address:</strong></div>
-                <div class="col-sm-8">Malai V suku Timur, Kecamatan Batang Gasan, Kabupaten Padang Pariaman, Provinsi Sumatera Barat</div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-sm-4"><strong>Language:</strong></div>
-                <div class="col-sm-8">Bahasa Indonesia</div>
+    <div class="section" id="about">
+      <div class="container">
+        <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-offset="10">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">About</div>
+                <p>Hallo, Saya adalah Devi Erman Efedi Saya berasal dari orang bisa aja, dan ini adalah projects pertama saya.</p>
               </div>
             </div>
-           </div>
-         </div>
-       </div>
-    </section>
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body">
+                <div class="h4 mt-0 title">Basic Information</div>
+                <div class="row">
+                  <div class="col-sm-4"><strong>Age:</strong></div>
+                  <div class="col-sm-8">18</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong>Email:</strong></div>
+                  <div class="col-sm-8">deviermanefendi@gmail.com</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong>Phone:</strong></div>
+                  <div class="col-sm-8">+6281268979920</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong>Address:</strong></div>
+                  <div class="col-sm-8">Malai V suku Timur, Kecamatan Batang Gasan, Kabupaten Padang Pariaman, Provinsi Sumatera Barat</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong>Language:</strong></div>
+                  <div class="col-sm-8">Bahasa Indonesia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- akhir about-->
 
     <br><br><br>
@@ -133,7 +133,7 @@
     <!-- projects -->
     <section id="projects">
       <div class="container">
-        <div class="row text-center mb-4">
+        <div class="row text-center mb-10">
           <div class="col">
             <h3>My Projects</h3>
           </div>
@@ -392,8 +392,11 @@
         <div class="row text-center">
           <div class="col">
             <h3>Contact Me</h3>
+            Jangan ragu untuk menghubungi saya
+            <br>
           </div>
         </div>
+        <br>
         <div class="row justify-content-center">
           <div class="col-md-7">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
@@ -405,11 +408,10 @@
               <div class="mb-3">
                 <label for="Name" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="Name" aria-describedby="Name" name="nama" />
-               
-              </div>
+             
               <div class="mb-3">
-                <label for="Email" class="form-label">Email</label>
-                <input type="Email" class="form-control" id="Email" aria-describedby="email" name="email" />
+                <label for="Nomor" class="form-label">Nomor Whatsapp</label>
+                <input type="text" class="form-control" id="Nomor" aria-describedby="Nomor" name="nomor" />
                
             <div class="mb-3">
                     <label for="Pesan" class="form-label">Pesan</label>
@@ -466,9 +468,7 @@
         form.reset();
             
           console.log('Success!', response)})
-
-
-          .catch(error => console.error('Error!', error.message))
+        .catch(error => console.error('Error!', error.message))
       })
     </script>
 
