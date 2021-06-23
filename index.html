@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
 
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
@@ -52,31 +52,39 @@
       <h3 class="display-4 text-white"><strong>Devi Erman Efendi</strong></h3>
       <p class="lead text-white">devboy2nd</p>
 
+      <br><br><br><br>
 
-      <br><br>
-  <!--sosial media-->
+       
+       <!-- sosial media-->
+    
+  <footer class="text-white text-center pb-1 "> 
 
-  <footer class="text-dark text-center pb-1 text-white"> 
+    <strong> Social Media</strong>
 
-    Social Media
+ <br><br>
 
-    <br><br>
+  <a href="https://wa.me/6281268979920"><img src="img/wa.png" alt="Whatsapp" width="48"></a>
+   
 
-     <a href="https://wa.me/6281268979920" class="text-white fw-bold">Whatsapp</a>
+  <a href="https://www.instagram.com/devboy2nd/"><img src="img/ig.png" alt="Instagram" width="45"></a>
+   
+
+  <a href="https://web.facebook.com/dev.bou.752487/"><img src="img/fb.png" alt="Facebook" width="53"></a>
+
+  
+  <a href="https://t.me/devboy2nd" > <img src="img/tele.png" alt="Telegram" width="52"></a>
+</footer>
+
+<!-- akhir sosial media-->
       
-
-     <a href="https://www.instagram.com/devboy2nd/" class="text-white fw-bold">Instagram</a>
-      
-
-     <a href="https://web.facebook.com/dev.bou.752487/" class="text-white fw-bold">Facebook</a>
-  </footer>
-
-  <!-- akhir sosial media-->
 
     </section>
 
     <!-- akhir jumbotron -->
+
     <br /><br />
+
+
     <!-- about-->
 
     <section id="about">
@@ -119,8 +127,8 @@
     </section>
     <!-- akhir about-->
 
-    <br />
-    <br />
+    <br><br><br>
+  
 
     <!-- projects -->
     <section id="projects">
@@ -381,17 +389,18 @@
     <!-- contact-->
     <section id="contact">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center">
           <div class="col">
             <h3>Contact Me</h3>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-d-6">
+          <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Terimakasih!</strong>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+        
             <form name="devboy2ndcontactform">
               <div class="mb-3">
                 <label for="Name" class="form-label">Nama Lengkap</label>
@@ -424,16 +433,16 @@
     </footer>
     <!-- akhir footer-->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-    <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></body>
 
 
     <script>
       const scriptURL ='https://script.google.com/macros/s/AKfycbyltnergJiaM0lZJng65tHBcOdvWP6I_63MrTo8TMhbE45wBEkT08cjPqwRuq8QMzSVZw/exec';
 
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
     
       form.addEventListener('submit', e => {
         e.preventDefault();
@@ -457,7 +466,7 @@
 
             form.reset();
 
-            console.log('Success!', response)
+            console.log('Success', response)
         
         })
           .catch(error => console.error('Error!', error.message))
